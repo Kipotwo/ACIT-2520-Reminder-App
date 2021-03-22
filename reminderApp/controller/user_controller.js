@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const database = require("../database");
 
 const getUserByEmail = ( email, password ) => {
@@ -27,4 +28,35 @@ const isUserValid = (user,password) => {
 module.exports = {
     getUserByEmail,
     getUserById
+=======
+const database = require("../database");
+
+const getUserByEmail = ( email, password ) => {
+    let user = database.find((user)=> user.email === email );
+    if (user) {
+        console.log("found user")
+        if ( isUserValid (user, password)) {
+            console.log(user)
+            return user;
+        }
+    } 
+    return null;
+};
+
+const getUserById = (id) => {
+    let user = database.find((user)=> user.id === id);
+    if (user) {
+        return user;
+    }
+    return null;
+}
+
+const isUserValid = (user,password) => {
+    return user.password === password;
+}
+
+module.exports = {
+    getUserByEmail,
+    getUserById
+>>>>>>> aeb693b058a0547106ea5ac3557e57a2beeae838
 };

@@ -9,8 +9,6 @@ const localLogin = new LocalStrategy(
       passwordField: "password",
     },
     (email, password, done) => {
-      console.log("local strategy running")
-      console.log(email,password);
       const user = userController.getUserByEmail(email,password)
       return user
         ? done(null, user)
