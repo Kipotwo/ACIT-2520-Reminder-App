@@ -4,11 +4,15 @@ Term project for ACIT 2520
 # Matthew Vu A01231482
 # Aron Yang A01229156
 
-# Week Mar 8 - 12
 
+# First Sprint:
 
-# Week Mar 13 - 20
+Aron Yang:
+Update Function - Updates a reminder
+Delete Function - Deletes a reminder
 
+Aaron Ma:
+Local Authentication - Implemented local authentication for the app
 
-# Week Mar 21 - 28
+Matthew Vu:
 
