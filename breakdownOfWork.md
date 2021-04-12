@@ -15,4 +15,4 @@ Aaron Ma:
 Local Authentication - Implemented local authentication for the app
 
 Matthew Vu:
-
+API - Watched videos for app
