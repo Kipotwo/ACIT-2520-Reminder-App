@@ -5,11 +5,14 @@ Term project for ACIT 2520
 # Aron Yang A01229156
 
 
-# First Sprint:
-
 Aron Yang:
 Update Function - Updates a reminder
 Delete Function - Deletes a reminder
+// After Break:
+Created subtasks association
+Created tags association
+Created date association
+
 
 Aaron Ma:
 Local Authentication - Implemented local authentication for the app
