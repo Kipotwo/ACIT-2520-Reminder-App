@@ -26,6 +26,7 @@ Aron Yang: Created subtasks association Created tags association Created date as
 # Week Apr 20
 Aaron:
 -Added a friend controller for friend/social routes
+-Added friend route to handle friend/social features like search/show friend reminders
 -Added social reminders partway
 -Not sure how to make an add friend button, 
 -Made a friend button in the nav bar to navigate to friends' reminder page
