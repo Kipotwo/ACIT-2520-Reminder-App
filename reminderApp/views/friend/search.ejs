@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="page-header"> Users </h1>
+  
+  <ul class="list-group">
+    <% users.forEach(function (user) { %>
+      <li class="list-group-item">
+        <strong><%= user.name %>: </strong>
+        <button> Add friend </button>
+        <% user.reminders.forEach(function (reminder) {%>
+            <li> 
+                <%= reminder.title %>
+            </li>
+        <% }) %>
+      </li>
+    <% } ) %>
+  </ul>
+  
+  </div>
+  

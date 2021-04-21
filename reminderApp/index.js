@@ -19,6 +19,7 @@ app.use(
 const passport = require("./middleware/passport")
 //get authroute
 const authRoute = require("./routes/authRoute");
+const friendRoute = require("./routes/friendRoute");
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -43,14 +44,9 @@ app.post("/reminder/update/:id", reminderController.update);
 // Implement this yourself
 app.post("/reminder/delete/:id", reminderController.delete);
 
-// AUTH ROUTE
-// Fix this to work with passport! The registration does not need to work, you can use the fake database for this.
-// app.get("/register", authController.register);
-// app.get("/login", authController.login);
-// app.post("/register", authController.registerSubmit);
-// app.post("/login", authController.loginSubmit);
-app.use("/auth", authRoute);
 
+app.use("/auth", authRoute);
+app.use("/friend",friendRoute);
 
 app.listen(port, function () {
   console.log(
