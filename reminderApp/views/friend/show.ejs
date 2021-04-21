@@ -4,7 +4,20 @@
   <ul class="list-group">
     <% friends.forEach(function (friend) { %>
       <li class="list-group-item">
-        <strong><%= friend %> </strong>
+        <strong> <%= friend.name %> </strong>
+        <% friend.reminders.forEach(function (reminder) {%>
+          <li class="list-group-item">
+            <strong><%= reminder.title %>: </strong>
+            <%= reminder.description %>
+            || Completed:
+            <% if (reminder.completed == true) { %>
+              <span class="badge badge-success">True</span>
+            <% } else if (reminder.completed == false) { %>
+              <span class="badge badge-danger">False</span>
+            <% } %>
+            <a class="pull-right" href=<%= "/reminder/" + reminder.id %>>View</a>
+          </li>
+          <% } ) %>
       </li>
     <% } ) %>
   </ul>

@@ -7,7 +7,7 @@ let Database = [
         password: "c",
         id: 1,
         name: "cindy",
-        friends: ["alex", "test"]
+        friends: [1, 3]
     },
     {
         reminders: [],
@@ -27,7 +27,7 @@ let Database = [
         email: "email@email.com",
         password:"b",
         id: 3,
-        name: " test ",
+        name: "test name",
         friends: [3, 1]
     } 
 ]
